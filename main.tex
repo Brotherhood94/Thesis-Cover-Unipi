@@ -1,0 +1,88 @@
+
+%------------------------------------------------------------
+%------------------------------------------------------------
+% Cover Author:
+%   Alessandro Berti <alessandro.berti94@hotmail.it>
+%   https://www.linkedin.com/in/aleberti/
+%
+% License Creative Commons Attribution (CC BY 4.0)
+% https://creativecommons.org/licenses/by/4.0/
+%------------------------------------------------------------
+%------------------------------------------------------------
+
+
+
+\documentclass[12pt]{report}
+\usepackage{tabularx}
+\usepackage{tikz}
+\usepackage[top=1in, bottom=1in, left=1.4in, right=1in]{geometry}
+
+
+
+%---- EDIT HERE
+\newcommand{\candidatename}{Name Surname}
+\newcommand{\supervisorA}{Supervisor A}
+\newcommand{\supervisorB}{Supervisor B}
+\newcommand{\department}{Department of Computer Science}
+\newcommand{\degree}{Bachelor/Master Degree}
+\newcommand{\thesistitle}{A Super Cool\\ Thesis Title}
+
+
+\begin{document}
+
+
+%remove page number
+\thispagestyle{empty}
+
+
+\begin{figure}[htb]
+  \centering
+  \includegraphics[width=\linewidth]{images/marchio_unipi_pant541.eps}
+\end{figure}
+
+\begin{center}
+
+    %Department
+    \vspace{-0.5cm}
+    \Large
+    \textsc{\department}\\
+    
+    %Degree
+    \vspace{0.3cm}
+    \large
+    \textbf{\textsc{\degree}}\\
+    
+    %Title
+    \vspace{1cm}
+    \Large
+    \textbf{\textsc{\thesistitle}}
+    \vspace{1.5cm}
+    
+
+    %Candidate and Supervisisor(s)
+    \begin{tabularx}{1\textwidth}
+        {>{\raggedright\arraybackslash\normalsize}X>{\raggedleft\arraybackslash\normalsize}X}
+        Candidate & Supervisors \\
+        \textbf{\textit{\candidatename}} & \textbf{\textit{\supervisorA}} \\
+        \textbf{\textit{}} & \textbf{\textit{\supervisorB}} \\
+        %\textbf{\textit{}} & \textbf{\textit{\supervisorC}} \\
+    \end{tabularx}
+    
+    \vfill
+    \vspace{0.5cm}
+    
+    %Year\\
+    \textbf{\textsc{A.Y. 2020-2021}}\\
+
+\end{center}
+
+
+\tikz[remember picture,overlay] \node[opacity=0.1,inner sep=0pt] [yshift=-5cm] at (current page.center){\includegraphics[width=15cm]{images/cherubino_black.eps}};
+
+
+%Leave the next page empty
+\newpage
+\shipout\null
+
+
+\end{document}
