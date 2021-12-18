@@ -1,5 +1,5 @@
 # Thesis Cover
-Thesis cover designed for University of Pisa students.
+Thesis cover designed for University of Pisa students. <br>
 Feel free to adapt this cover to your University :)
 
 ## PREVIEW
